@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SiloMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Body
+    m_Weight: 0
+  - m_Path: Body_Armor1
+    m_Weight: 0
+  - m_Path: Body_Armor2
+    m_Weight: 0
+  - m_Path: Body_Armor3
+    m_Weight: 0
+  - m_Path: Body_Armor4
+    m_Weight: 0
+  - m_Path: Body_Armor5
+    m_Weight: 0
+  - m_Path: Body_Armor6
+    m_Weight: 0
+  - m_Path: Body_Armor7
+    m_Weight: 0
+  - m_Path: Body_Armor8
+    m_Weight: 0
+  - m_Path: Body_Armor9
+    m_Weight: 0
+  - m_Path: Body_Armor10
+    m_Weight: 0
+  - m_Path: Body_Armor11
+    m_Weight: 0
+  - m_Path: Body_Armor12
+    m_Weight: 0
+  - m_Path: Body_Armor13
+    m_Weight: 0
+  - m_Path: Body_Armor15
+    m_Weight: 0
+  - m_Path: Body_Armor16
+    m_Weight: 0
+  - m_Path: Body_Armor17
+    m_Weight: 0
+  - m_Path: Body_Armor18
+    m_Weight: 0
+  - m_Path: Body_Armor19
+    m_Weight: 0
+  - m_Path: Body_Armor20
+    m_Weight: 0
+  - m_Path: Body_Armor21
+    m_Weight: 0
+  - m_Path: Body_Armor22
+    m_Weight: 0
+  - m_Path: Body_Armor23
+    m_Weight: 0
+  - m_Path: Body_Armor24
+    m_Weight: 0
+  - m_Path: Body_Armor25
+    m_Weight: 0
+  - m_Path: Body_Armor25 1
+    m_Weight: 0
+  - m_Path: Body_Armor26
+    m_Weight: 0
+  - m_Path: Body_Armor27
+    m_Weight: 0
+  - m_Path: Body_Armor29
+    m_Weight: 0
+  - m_Path: Body_Armor30
+    m_Weight: 0
+  - m_Path: Body_Armor31
+    m_Weight: 0
+  - m_Path: Body_Armor32
+    m_Weight: 0
+  - m_Path: Body_Armor33
+    m_Weight: 0
+  - m_Path: Body_Armor34
+    m_Weight: 0
+  - m_Path: Body_Armor35
+    m_Weight: 0
+  - m_Path: Body_Armor36
+    m_Weight: 0
+  - m_Path: Body_Armor37
+    m_Weight: 0
+  - m_Path: Body_Armor38
+    m_Weight: 0
+  - m_Path: Body_Armor40
+    m_Weight: 0
+  - m_Path: Body_Armor41
+    m_Weight: 0
+  - m_Path: Body_Armor42
+    m_Weight: 0
+  - m_Path: Body_Armor42 1
+    m_Weight: 0
+  - m_Path: Body_Armor43
+    m_Weight: 0
+  - m_Path: Body_Armor44
+    m_Weight: 0
+  - m_Path: Body_Armor45
+    m_Weight: 0
+  - m_Path: Body_Armor46
+    m_Weight: 0
+  - m_Path: Body_Armor47
+    m_Weight: 0
+  - m_Path: Body_Armor48
+    m_Weight: 0
+  - m_Path: Body_Armor49
+    m_Weight: 0
+  - m_Path: Character001
+    m_Weight: 0
+  - m_Path: Character001Hub001
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Hub001Bone001
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Hub001Bone002
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Hub001Bone003
+    m_Weight: 1
+  - m_Path: Character001Hub001/Character001Hub001Bone004
+    m_Weight: 1
+  - m_Path: Character001Hub001/Character001Tail1
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1/Character001Tail2
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1/Character001Tail2/Character001Tail3
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1/Character001Tail2/Character001Tail3/Character001Tail4
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1/Character001Tail2/Character001Tail3/Character001Tail4/Character001Tail5
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1 1
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1 1/Character001Tail2 2
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1 1/Character001Tail2 2/Character001Tail3
+      2
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1 1/Character001Tail2 2/Character001Tail3
+      2/Character001Tail4 2
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1 1/Character001Tail2 2/Character001Tail3
+      2/Character001Tail4 2/Character001Tail5 2
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1 2
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1 2/Character001Tail2 1
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1 2/Character001Tail2 1/Character001Tail3
+      1
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1 2/Character001Tail2 1/Character001Tail3
+      1/Character001Tail4 1
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1 2/Character001Tail2 1/Character001Tail3
+      1/Character001Tail4 1/Character001Tail5 1
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1 2/Character001Tail2 1/Character001Tail3
+      1/Character001Tail4 1/Character001Tail5 1/Character0015Bone001
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1 2/Character001Tail2 1/Character001Tail3
+      1/Character001Tail4 1/Character001Tail5 1/Character0015Bone001/Character0015Bone001Bone001
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1 2/Character001Tail2 1/Character001Tail3
+      1/Character001Tail4 1/Character001Tail5 1/Character0015Bone001/Character0015Bone001Bone001/Character0015Bone001Bone001Bone001
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1 2/Character001Tail2 1/Character001Tail3
+      1/Character001Tail4 1/Character001Tail5 1/Character0015Bone001/Character0015Bone001Bone001/Character0015Bone001Bone001Bone001/Character0015Bone001Bone001Bone001Bone001
+    m_Weight: 0
+  - m_Path: Character001Hub001/Character001Tail1 2/Character0011Bone001
+    m_Weight: 0
+  - m_Path: Core
+    m_Weight: 0
+  - m_Path: Jaw
+    m_Weight: 0
+  - m_Path: Jaw_armed
+    m_Weight: 0
+  - m_Path: Jaw_missile
+    m_Weight: 0
+  - m_Path: neck_armed
+    m_Weight: 0
+  - m_Path: Skull_Effect
+    m_Weight: 0
+  - m_Path: Tail_Fin
+    m_Weight: 0
+  - m_Path: upper_jaw
+    m_Weight: 0
+  - m_Path: Wing_Armed
+    m_Weight: 0
+  - m_Path: Wings_lights
+    m_Weight: 0

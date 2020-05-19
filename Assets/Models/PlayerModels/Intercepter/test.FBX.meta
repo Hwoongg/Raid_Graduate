@@ -1,0 +1,156 @@
+fileFormatVersion: 2
+guid: 73a4dc6fae8bbd24eacd3a31cb8642d1
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body
+    100002: Group001
+    100004: Group002
+    100006: Hair
+    100008: Light_Object
+    100010: Light_Object001
+    100012: Mag
+    100014: Mag001
+    100016: Object001
+    100018: Object002
+    100020: //RootNode
+    100022: wings
+    400000: Body
+    400002: Group001
+    400004: Group002
+    400006: Hair
+    400008: Light_Object
+    400010: Light_Object001
+    400012: Mag
+    400014: Mag001
+    400016: Object001
+    400018: Object002
+    400020: //RootNode
+    400022: wings
+    2100000: Face_Diffuse
+    2100002: Pants
+    2100004: Belt
+    2100006: Jaket
+    2100008: pony1_initialShadingGroup4
+    2100010: Eyes
+    2100012: Harnes
+    2100014: Hair
+    2100016: Parts Body Mat
+    2100018: Parts Core Mat
+    2100020: Hair_initialShadingGroup
+    2100022: SMG
+    2300000: Body
+    2300002: Hair
+    2300004: Light_Object
+    2300006: Light_Object001
+    2300008: Mag
+    2300010: Mag001
+    2300012: Object001
+    2300014: Object002
+    2300016: wings
+    3300000: Body
+    3300002: Hair
+    3300004: Light_Object
+    3300006: Light_Object001
+    3300008: Mag
+    3300010: Mag001
+    3300012: Object001
+    3300014: Object002
+    3300016: wings
+    4300000: Body
+    4300002: Hair
+    4300004: wings
+    4300006: Mag
+    4300008: Light_Object
+    4300010: Object001
+    4300012: Light_Object001
+    4300014: Mag001
+    4300016: Object002
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: e3653d473d8523d4eb05068c82ca0af9
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ammo
+    100002: Ammo 1
+    100004: Ammo_Box
+    100006: Ammo_cartridge
+    100008: Ammo_parabellum
+    100010: //RootNode
+    100012: cabinit
+    100014: Fluorescent_lamp
+    100016: Gun
+    100018: Gun001
+    100020: Gun002
+    100022: Gun003
+    100024: Gun004
+    100026: Gun_Body
+    100028: Gun_mag
+    100030: holostuff
+    100032: Light_Object
+    100034: Light_Object001
+    100036: Light_Object002
+    100038: Military_Stoff_box
+    100040: Object001
+    100042: Object003
+    100044: Object007
+    100046: Object008
+    100048: Object009
+    100050: Pillar
+    100052: pistol
+    100054: Setting
+    100056: table
+    100058: tablet_blue
+    100060: tablet_white_1
+    100062: tablet_white_2
+    100064: wall_room
+    100066: weapono_tablet
+    100068: World_Map(Waiting_Room)
+    100070: Box001
+    100072: Box001 1
+    100074: cabinit_object
+    100076: desk
+    100078: gun
+    100080: Plane001
+    100082: Plane001 1
+    100084: wall
+    100086: wall_light
+    100088: wall_light 1
+    400000: Ammo
+    400002: Ammo 1
+    400004: Ammo_Box
+    400006: Ammo_cartridge
+    400008: Ammo_parabellum
+    400010: //RootNode
+    400012: cabinit
+    400014: Fluorescent_lamp
+    400016: Gun
+    400018: Gun001
+    400020: Gun002
+    400022: Gun003
+    400024: Gun004
+    400026: Gun_Body
+    400028: Gun_mag
+    400030: holostuff
+    400032: Light_Object
+    400034: Light_Object001
+    400036: Light_Object002
+    400038: Military_Stoff_box
+    400040: Object001
+    400042: Object003
+    400044: Object007
+    400046: Object008
+    400048: Object009
+    400050: Pillar
+    400052: pistol
+    400054: Setting
+    400056: table
+    400058: tablet_blue
+    400060: tablet_white_1
+    400062: tablet_white_2
+    400064: wall_room
+    400066: weapono_tablet
+    400068: World_Map(Waiting_Room)
+    400070: Box001
+    400072: Box001 1
+    400074: cabinit_object
+    400076: desk
+    400078: gun
+    400080: Plane001
+    400082: Plane001 1
+    400084: wall
+    400086: wall_light
+    400088: wall_light 1
+    2100000: 'Material #46'
+    2100002: 'Material #38'
+    2100004: 'Material #49'
+    2100006: 'Material #48'
+    2100008: 'Material #50'
+    2100010: 'Material #13'
+    2100012: 'Material #102'
+    2100014: 'Material #32'
+    2100016: 'Material #35'
+    2100018: 'Material #36'
+    2100020: 'Material #7'
+    2100022: 'Material #34'
+    2100024: 'Material #33'
+    2100026: 'Material #113'
+    2100028: 'Material #112'
+    2100030: 'Material #117'
+    2100032: 'Material #116'
+    2100034: 'Material #114'
+    2100036: 'Material #122'
+    2100038: 'Material #121'
+    2100040: 'Material #115'
+    2100042: 'Material #119'
+    2100044: 'Material #111'
+    2100046: 'Material #107'
+    2100048: 'Material #27'
+    2100050: 'Material #94'
+    2100052: 'Material #104'
+    2100054: 'Material #106'
+    2100056: 'Material #108'
+    2100058: 'Material #109'
+    2100060: 'Material #110'
+    2100062: 'Material #105'
+    2100064: 'Material #100'
+    2100066: 'Material #120'
+    2100068: 'Material #226'
+    2100070: 'Material #249'
+    2100072: 01 - Default
+    2100074: 'Material #212'
+    2100076: 'Material #214'
+    2100078: 'Material #213'
+    2100080: texrure
+    2100082: 'Material #25'
+    2300000: Ammo
+    2300002: Ammo 1
+    2300004: Ammo_Box
+    2300006: Ammo_cartridge
+    2300008: Ammo_parabellum
+    2300010: cabinit
+    2300012: Fluorescent_lamp
+    2300014: Gun
+    2300016: Gun001
+    2300018: Gun002
+    2300020: Gun003
+    2300022: Gun004
+    2300024: Gun_Body
+    2300026: Gun_mag
+    2300028: holostuff
+    2300030: Light_Object
+    2300032: Light_Object001
+    2300034: Light_Object002
+    2300036: Military_Stoff_box
+    2300038: Object001
+    2300040: Object003
+    2300042: Object007
+    2300044: Object008
+    2300046: Object009
+    2300048: Pillar
+    2300050: pistol
+    2300052: Setting
+    2300054: table
+    2300056: tablet_blue
+    2300058: tablet_white_1
+    2300060: tablet_white_2
+    2300062: wall_room
+    2300064: weapono_tablet
+    2300066: World_Map(Waiting_Room)
+    2300068: cabinit_object
+    2300070: desk
+    2300072: gun
+    2300074: Plane001
+    2300076: Plane001 1
+    2300078: wall
+    2300080: wall_light
+    2300082: wall_light 1
+    3300000: Ammo
+    3300002: Ammo 1
+    3300004: Ammo_Box
+    3300006: Ammo_cartridge
+    3300008: Ammo_parabellum
+    3300010: cabinit
+    3300012: Fluorescent_lamp
+    3300014: Gun
+    3300016: Gun001
+    3300018: Gun002
+    3300020: Gun003
+    3300022: Gun004
+    3300024: Gun_Body
+    3300026: Gun_mag
+    3300028: holostuff
+    3300030: Light_Object
+    3300032: Light_Object001
+    3300034: Light_Object002
+    3300036: Military_Stoff_box
+    3300038: Object001
+    3300040: Object003
+    3300042: Object007
+    3300044: Object008
+    3300046: Object009
+    3300048: Pillar
+    3300050: pistol
+    3300052: Setting
+    3300054: table
+    3300056: tablet_blue
+    3300058: tablet_white_1
+    3300060: tablet_white_2
+    3300062: wall_room
+    3300064: weapono_tablet
+    3300066: World_Map(Waiting_Room)
+    3300068: cabinit_object
+    3300070: desk
+    3300072: gun
+    3300074: Plane001
+    3300076: Plane001 1
+    3300078: wall
+    3300080: wall_light
+    3300082: wall_light 1
+    4300000: World_Map(Waiting_Room)
+    4300002: weapono_tablet
+    4300004: Ammo_Box
+    4300006: table
+    4300008: Military_Stoff_box
+    4300010: tablet_blue
+    4300012: tablet_white_1
+    4300014: tablet_white_2
+    4300016: pistol
+    4300018: Ammo_cartridge
+    4300020: Ammo_parabellum
+    4300022: Gun_mag
+    4300024: Gun
+    4300026: Gun001
+    4300028: Gun002
+    4300030: Gun003
+    4300032: Gun_Body
+    4300034: Light_Object
+    4300036: Gun004
+    4300038: Light_Object001
+    4300040: wall_room
+    4300042: Ammo
+    4300044: Ammo
+    4300046: cabinit
+    4300048: Object001
+    4300050: holostuff
+    4300052: Fluorescent_lamp
+    4300054: Setting
+    4300056: Pillar
+    4300058: Object003
+    4300060: Object007
+    4300062: Object008
+    4300064: Object009
+    4300066: Light_Object002
+    4300068: desk
+    4300070: wall_light
+    4300072: wall
+    4300074: wall_light
+    4300076: cabinit_object
+    4300078: Plane001
+    4300080: Plane001
+    4300082: gun
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

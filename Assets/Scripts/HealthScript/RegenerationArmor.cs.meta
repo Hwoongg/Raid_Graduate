@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7eb5a36ad14869043953cb14a1e88d61
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - objDeadEffect: {fileID: 1224410393147878, guid: dea6792a23af00d4eae4d32a3bd1358e,
+      type: 3}
+  - MainHealth: {instanceID: 0}
+  - WaitmodeMaterial: {fileID: 2100000, guid: be398cf9d2bdf084e9c3ec351255c2ea, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

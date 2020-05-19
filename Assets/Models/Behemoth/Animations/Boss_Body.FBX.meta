@@ -1,0 +1,436 @@
+fileFormatVersion: 2
+guid: e92ea34b09f338a4b9c909ca9f157b28
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body
+    100002: Body_Armor1
+    100004: Body_Armor10
+    100006: Body_Armor11
+    100008: Body_Armor12
+    100010: Body_Armor13
+    100012: Body_Armor15
+    100014: Body_Armor16
+    100016: Body_Armor17
+    100018: Body_Armor18
+    100020: Body_Armor19
+    100022: Body_Armor2
+    100024: Body_Armor20
+    100026: Body_Armor21
+    100028: Body_Armor22
+    100030: Body_Armor23
+    100032: Body_Armor24
+    100034: Body_Armor25
+    100036: Body_Armor25 1
+    100038: Body_Armor26
+    100040: Body_Armor27
+    100042: Body_Armor29
+    100044: Body_Armor3
+    100046: Body_Armor30
+    100048: Body_Armor31
+    100050: Body_Armor32
+    100052: Body_Armor33
+    100054: Body_Armor34
+    100056: Body_Armor35
+    100058: Body_Armor36
+    100060: Body_Armor37
+    100062: Body_Armor38
+    100064: Body_Armor4
+    100066: Body_Armor40
+    100068: Body_Armor41
+    100070: Body_Armor42
+    100072: Body_Armor42 1
+    100074: Body_Armor43
+    100076: Body_Armor44
+    100078: Body_Armor45
+    100080: Body_Armor46
+    100082: Body_Armor47
+    100084: Body_Armor48
+    100086: Body_Armor49
+    100088: Body_Armor5
+    100090: Body_Armor6
+    100092: Body_Armor7
+    100094: Body_Armor8
+    100096: Body_Armor9
+    100098: //RootNode
+    100100: Character001
+    100102: Character0011Bone001
+    100104: Character0015Bone001
+    100106: Character0015Bone001Bone001
+    100108: Character0015Bone001Bone001Bone001
+    100110: Character0015Bone001Bone001Bone001Bone001
+    100112: Character001Hub001
+    100114: Character001Hub001Bone001
+    100116: Character001Hub001Bone002
+    100118: Character001Hub001Bone003
+    100120: Character001Hub001Bone004
+    100122: Character001Tail1
+    100124: Character001Tail1 1
+    100126: Character001Tail1 2
+    100128: Character001Tail2
+    100130: Character001Tail2 1
+    100132: Character001Tail2 2
+    100134: Character001Tail3
+    100136: Character001Tail3 1
+    100138: Character001Tail3 2
+    100140: Character001Tail4
+    100142: Character001Tail4 1
+    100144: Character001Tail4 2
+    100146: Character001Tail5
+    100148: Character001Tail5 1
+    100150: Character001Tail5 2
+    100152: Core
+    100154: Jaw
+    100156: Jaw_armed
+    100158: Jaw_missile
+    100160: neck_armed
+    100162: Skull_Effect
+    100164: Tail_Fin
+    100166: upper_jaw
+    100168: Wing_Armed
+    100170: Wings_lights
+    400000: Body
+    400002: Body_Armor1
+    400004: Body_Armor10
+    400006: Body_Armor11
+    400008: Body_Armor12
+    400010: Body_Armor13
+    400012: Body_Armor15
+    400014: Body_Armor16
+    400016: Body_Armor17
+    400018: Body_Armor18
+    400020: Body_Armor19
+    400022: Body_Armor2
+    400024: Body_Armor20
+    400026: Body_Armor21
+    400028: Body_Armor22
+    400030: Body_Armor23
+    400032: Body_Armor24
+    400034: Body_Armor25
+    400036: Body_Armor25 1
+    400038: Body_Armor26
+    400040: Body_Armor27
+    400042: Body_Armor29
+    400044: Body_Armor3
+    400046: Body_Armor30
+    400048: Body_Armor31
+    400050: Body_Armor32
+    400052: Body_Armor33
+    400054: Body_Armor34
+    400056: Body_Armor35
+    400058: Body_Armor36
+    400060: Body_Armor37
+    400062: Body_Armor38
+    400064: Body_Armor4
+    400066: Body_Armor40
+    400068: Body_Armor41
+    400070: Body_Armor42
+    400072: Body_Armor42 1
+    400074: Body_Armor43
+    400076: Body_Armor44
+    400078: Body_Armor45
+    400080: Body_Armor46
+    400082: Body_Armor47
+    400084: Body_Armor48
+    400086: Body_Armor49
+    400088: Body_Armor5
+    400090: Body_Armor6
+    400092: Body_Armor7
+    400094: Body_Armor8
+    400096: Body_Armor9
+    400098: //RootNode
+    400100: Character001
+    400102: Character0011Bone001
+    400104: Character0015Bone001
+    400106: Character0015Bone001Bone001
+    400108: Character0015Bone001Bone001Bone001
+    400110: Character0015Bone001Bone001Bone001Bone001
+    400112: Character001Hub001
+    400114: Character001Hub001Bone001
+    400116: Character001Hub001Bone002
+    400118: Character001Hub001Bone003
+    400120: Character001Hub001Bone004
+    400122: Character001Tail1
+    400124: Character001Tail1 1
+    400126: Character001Tail1 2
+    400128: Character001Tail2
+    400130: Character001Tail2 1
+    400132: Character001Tail2 2
+    400134: Character001Tail3
+    400136: Character001Tail3 1
+    400138: Character001Tail3 2
+    400140: Character001Tail4
+    400142: Character001Tail4 1
+    400144: Character001Tail4 2
+    400146: Character001Tail5
+    400148: Character001Tail5 1
+    400150: Character001Tail5 2
+    400152: Core
+    400154: Jaw
+    400156: Jaw_armed
+    400158: Jaw_missile
+    400160: neck_armed
+    400162: Skull_Effect
+    400164: Tail_Fin
+    400166: upper_jaw
+    400168: Wing_Armed
+    400170: Wings_lights
+    2100000: Armed_Body_Wire
+    2100002: 21 - Default
+    2100004: Body
+    2100006: 22 - Default
+    4300000: Wing_Armed
+    4300002: Jaw
+    4300004: upper_jaw
+    4300006: neck_armed
+    4300008: Jaw_armed
+    4300010: Tail_Fin
+    4300012: Wings_lights
+    4300014: Jaw_missile
+    4300016: Body_Armor21
+    4300018: Body_Armor1
+    4300020: Body_Armor13
+    4300022: Body_Armor25
+    4300024: Body_Armor22
+    4300026: Body_Armor23
+    4300028: Body_Armor25
+    4300030: Body_Armor29
+    4300032: Body_Armor4
+    4300034: Body_Armor32
+    4300036: Body_Armor34
+    4300038: Body_Armor42
+    4300040: Body_Armor16
+    4300042: Body_Armor33
+    4300044: Skull_Effect
+    4300046: Body
+    4300048: Body_Armor2
+    4300050: Body_Armor27
+    4300052: Body_Armor3
+    4300054: Body_Armor24
+    4300056: Body_Armor30
+    4300058: Body_Armor5
+    4300060: Body_Armor41
+    4300062: Body_Armor40
+    4300064: Body_Armor36
+    4300066: Body_Armor35
+    4300068: Body_Armor43
+    4300070: Body_Armor45
+    4300072: Body_Armor46
+    4300074: Body_Armor48
+    4300076: Body_Armor49
+    4300078: Core
+    4300080: Body_Armor26
+    4300082: Body_Armor12
+    4300084: Body_Armor15
+    4300086: Body_Armor17
+    4300088: Body_Armor18
+    4300090: Body_Armor20
+    4300092: Body_Armor19
+    4300094: Body_Armor47
+    4300096: Body_Armor42
+    4300098: Body_Armor37
+    4300100: Body_Armor44
+    4300102: Body_Armor7
+    4300104: Body_Armor8
+    4300106: Body_Armor9
+    4300108: Body_Armor10
+    4300110: Body_Armor11
+    4300112: Body_Armor38
+    4300114: Body_Armor31
+    4300116: Body_Armor6
+    7400000: SPL_Boss_Body
+    9500000: //RootNode
+    13700000: Body
+    13700002: Body_Armor1
+    13700004: Body_Armor10
+    13700006: Body_Armor11
+    13700008: Body_Armor12
+    13700010: Body_Armor13
+    13700012: Body_Armor15
+    13700014: Body_Armor16
+    13700016: Body_Armor17
+    13700018: Body_Armor18
+    13700020: Body_Armor19
+    13700022: Body_Armor2
+    13700024: Body_Armor20
+    13700026: Body_Armor21
+    13700028: Body_Armor22
+    13700030: Body_Armor23
+    13700032: Body_Armor24
+    13700034: Body_Armor25
+    13700036: Body_Armor25 1
+    13700038: Body_Armor26
+    13700040: Body_Armor27
+    13700042: Body_Armor29
+    13700044: Body_Armor3
+    13700046: Body_Armor30
+    13700048: Body_Armor31
+    13700050: Body_Armor32
+    13700052: Body_Armor33
+    13700054: Body_Armor34
+    13700056: Body_Armor35
+    13700058: Body_Armor36
+    13700060: Body_Armor37
+    13700062: Body_Armor38
+    13700064: Body_Armor4
+    13700066: Body_Armor40
+    13700068: Body_Armor41
+    13700070: Body_Armor42
+    13700072: Body_Armor42 1
+    13700074: Body_Armor43
+    13700076: Body_Armor44
+    13700078: Body_Armor45
+    13700080: Body_Armor46
+    13700082: Body_Armor47
+    13700084: Body_Armor48
+    13700086: Body_Armor49
+    13700088: Body_Armor5
+    13700090: Body_Armor6
+    13700092: Body_Armor7
+    13700094: Body_Armor8
+    13700096: Body_Armor9
+    13700098: Core
+    13700100: Jaw
+    13700102: Jaw_armed
+    13700104: Jaw_missile
+    13700106: neck_armed
+    13700108: Skull_Effect
+    13700110: Tail_Fin
+    13700112: upper_jaw
+    13700114: Wing_Armed
+    13700116: Wings_lights
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 21 - Default
+    second: {fileID: 2100000, guid: 698e9b414e8480446a19bf42b315c356, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 22 - Default
+    second: {fileID: 2100000, guid: df4e508a1005d4e4d96ac2910c1dff63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Armed_Body_Wire
+    second: {fileID: 2100000, guid: da0fcfa5cfea6374bb28f50b2806e7e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: 5c402d439abc2c649bdeaf660ff96940, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: SPL_Boss_Body
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 600
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 7
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 7
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
