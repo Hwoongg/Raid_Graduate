@@ -164,7 +164,7 @@ public class Weapon : MonoBehaviour, ILogicEvent
         }
     }
 
-    protected virtual void Fire()
+    protected virtual void Fire(float _reboundParam = 1.0f)
     {
         // 타이머 초기화
         timer = 0f;
@@ -188,8 +188,10 @@ public class Weapon : MonoBehaviour, ILogicEvent
         {
             objFireEfx[i].SetActive(true);
         }
+        animator.gameObject.GetComponent<NewController>().ShootRebound(_reboundParam);
 
         LogicEventListener.Invoke(eEventType.FOR_UI, eEventMessage.ON_AMMUNITION_COUNT_CHANGED, CurrentBullet, MaxBullet);
+        
 
         // RayCast
         if (IsEnemyHit = Physics.Raycast(ShootRay, out ShootHit, range, shootableMask))

@@ -406,4 +406,10 @@ public class NewController : MonoBehaviourPun, ILogicEvent
         }
             
     }
+
+    public void ShootRebound(float _rebound = 1.0f)
+    {
+        Y -= 1.3f * _rebound;
+        X += Random.Range(-0.3f, 0.3f) * _rebound;
+    }
 }

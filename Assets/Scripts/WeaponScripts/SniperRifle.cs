@@ -145,13 +145,17 @@ public class SniperRifle : SwitchableWeapon
 
     // 뒤로 밀림 가속 기능 추가 재정의
     // 애니메이터 조작 관련 개선 필요. Weapon의 Fire와 대조할 것
-    protected override void Fire()
+    protected override void Fire(float _rebParam = 1.0f)
     {
-        base.Fire();
+        
+
+        base.Fire(5.0f);
 
         animator.SetBool("onFire", true);
 
         // 뒤로 밀림 가속
         NowRebounding += ReboundDir * ReboundPower;
+
+        
     }
 }

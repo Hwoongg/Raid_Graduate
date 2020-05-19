@@ -46,6 +46,7 @@ public class EnemyArmor : BossHealth
         if(state == State.DESTRUCTIBLE)
             base.TakeDamage(amount);
 
-        MainHealth.TakeDamage(amount);
+        if(MainHealth)
+            MainHealth.TakeDamage(amount);
     }
 }

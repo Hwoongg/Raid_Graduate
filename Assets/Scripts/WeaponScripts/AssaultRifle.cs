@@ -121,4 +121,12 @@ public class AssaultRifle : SwitchableWeapon
         for (int i = 0; i < HideObjects.Length; i++)
             HideObjects[i].SetActive(true);
     }
+
+    protected override void Fire(float _rp = 1.0f)
+    {
+        
+        base.Fire();
+
+        
+    }
 }
