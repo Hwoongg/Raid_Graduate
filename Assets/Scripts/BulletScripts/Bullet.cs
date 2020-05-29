@@ -37,8 +37,11 @@ public class Bullet : MonoBehaviour
 
     public virtual void OnTriggerEnter(Collider other)
     {
-        other.GetComponent<PlayerHealth>().TakeDamage(1);
-        Explotion();
+        if (other.tag == "Player")
+        {
+            other.GetComponent<PlayerHealth>().TakeDamage(1);
+            Explotion();
+        }
     }
 
     public void DestroyCount()

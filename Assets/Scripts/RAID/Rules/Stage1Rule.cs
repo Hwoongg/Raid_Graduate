@@ -78,7 +78,7 @@ public class Stage1Rule : RulePrototype
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && false == IsMenuOpened)
+        if (Input.GetKeyDown(KeyCode.Escape) && false == IsMenuOpened && !IsChatUIOpened)
         {
             IsMenuOpened = true;
             SwitchMenuUI(true);
@@ -89,6 +89,7 @@ public class Stage1Rule : RulePrototype
         {
             IsMenuOpened = false;
             SwitchMenuUI(false);
+            Cursor.visible = false;
             LogicEventListener.Invoke(eEventType.FOR_SYSTEM, eEventMessage.ON_MENU_CLOSED);
         }
 
@@ -99,10 +100,11 @@ public class Stage1Rule : RulePrototype
             LogicEventListener.Invoke(eEventType.FOR_SYSTEM, eEventMessage.ON_CHAT_UI_OPENED);
         }
         else
-            if (Input.GetKeyDown(KeyCode.T) && true == IsChatUIOpened)
+            if (Input.GetKeyDown(KeyCode.Escape) && true == IsChatUIOpened)
         {
             IsChatUIOpened = false;
             SwitchChatUI(false);
+            Cursor.visible = false;
             LogicEventListener.Invoke(eEventType.FOR_SYSTEM, eEventMessage.ON_CHAT_UI_CLOSED);
         }
     }

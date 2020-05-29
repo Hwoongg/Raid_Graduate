@@ -38,7 +38,7 @@ public class NewController : MonoBehaviourPun, ILogicEvent
     [SerializeField] float XaxisSpeed = 30.0f, YaxisSpeed = 30.0f;
     float X, Y;
 
-    [SerializeField] float MinAngle = -45f, MaxAngle = 45f;
+    [SerializeField] float MinAngle = -89f, MaxAngle = 89f;
 
     [SerializeField] float JetMoveSpeed = 20.0f;
 

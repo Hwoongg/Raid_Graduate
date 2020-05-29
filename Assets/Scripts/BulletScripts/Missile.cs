@@ -13,24 +13,34 @@ public class Missile : Bullet
 
     public Transform Target { get; set; }
 
-    float timer;
+    float aimTimer;
+
+    Timer selfExpTimer;
     
     public override void Start()
     {
         Dbg.LogCheckAssigned(Target, this);
-        timer = 0;
+
+        selfExpTimer = new Timer(10.0f);
+        aimTimer = 0;
     }
     
     public override void Update()
     {
-        timer += Time.deltaTime;
+        aimTimer += Time.deltaTime;
+
+        selfExpTimer.Update();
+        if(selfExpTimer.IsTimeOver())
+        {
+            Explotion();
+        }
 
         if (Utils.IsNull(Target))
         {
             return;
         }
 
-        if (timer > 2.0f)
+        if (aimTimer > 2.0f)
         {
             Quaternion LookDir = Quaternion.LookRotation(Target.position - transform.position);
 
@@ -40,7 +50,6 @@ public class Missile : Bullet
 
         // 전진 이동
         transform.Translate(transform.forward * Speed * Time.deltaTime, Space.World);
-
     }
 
     public override void Explotion()
@@ -52,7 +61,10 @@ public class Missile : Bullet
 
     public override void OnTriggerEnter(Collider other)
     {
-        other.GetComponent<PlayerHealth>().TakeDamage(5);
-        Explotion();
+        if (other.tag == "Player")
+        {
+            other.GetComponent<PlayerHealth>().TakeDamage(5);
+            Explotion();
+        }
     }
 }

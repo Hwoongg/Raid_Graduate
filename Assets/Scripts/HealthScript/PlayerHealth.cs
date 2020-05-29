@@ -11,7 +11,7 @@ public class PlayerHealth : Health
 
     Image damageImage;
     [SerializeField] float flashSpeed = 0.5f;
-    [SerializeField] Color flashColor = new Color(1f, 0f, 0f, 0.2f);
+    [SerializeField] Color flashColor = new Color(0.3f, 0f, 0f, 0.2f);
     [SerializeField] GameObject objBarrier;
 
     bool bSlowRecovery;
@@ -68,7 +68,7 @@ public class PlayerHealth : Health
     }
 
     // TakeDamage()는 별도로 선언하지 않으면
-    // 묵시적으로 base의 것으로 자동 선언되는 듯 하다.
+    // 묵시적으로 base의 것으로 자동 선언되는 듯 함
 
     void SlowRecovery()
     {

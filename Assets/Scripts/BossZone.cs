@@ -10,6 +10,11 @@ public class BossZone : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        if(other.tag == "Enemy")
+        {
+            return;
+        }
+
         Rigidbody rig = other.GetComponent<Rigidbody>();
         if (rig == null)
             return;

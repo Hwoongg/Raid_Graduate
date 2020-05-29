@@ -23,7 +23,7 @@ public class EnemyArmor : BossHealth
     }
     public State state;
 
-    // 갑옷일 입고있는 본체의 체력 컴포넌트
+    // 갑옷을 입고있는 본체의 체력 컴포넌트
     [SerializeField] Health MainHealth;
 
     [SerializeField] int ArmorValue;
@@ -38,13 +38,13 @@ public class EnemyArmor : BossHealth
     
     public override void TakeDamage(int amount)
     {
+        if (state == State.DESTRUCTIBLE)
+            base.TakeDamage(amount);
+
         amount -= ArmorValue;
 
         if (amount < 1)
             amount = 1;
-
-        if(state == State.DESTRUCTIBLE)
-            base.TakeDamage(amount);
 
         if(MainHealth)
             MainHealth.TakeDamage(amount);

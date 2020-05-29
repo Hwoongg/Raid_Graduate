@@ -23,6 +23,9 @@ public class Boss : MonoBehaviour, ILogicEvent
     public List<Transform> PlayerTfList { get; set; } = new List<Transform>();
 
     Timer missileTimer;
+    Timer mineTimer;
+    [SerializeField] GameObject minePrefab;
+    [SerializeField] Transform minePoint;
 
     void OnEnable()
     {
@@ -54,6 +57,7 @@ public class Boss : MonoBehaviour, ILogicEvent
         BossHealth = GetComponentInChildren<Health>();
         PlayerTfList.Add(GameObject.Find("LocalPlayer").transform);
         missileTimer = new Timer(15.0f);
+        mineTimer = new Timer(60.0f);
     }
 
     void Update()
@@ -68,7 +72,17 @@ public class Boss : MonoBehaviour, ILogicEvent
         {
             bMissileLaunch = true;
         }
-        
+
+        if(Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            MineSpread();
+        }
+
+        //mineTimer.Update();
+        //if(mineTimer.IsTimeOver())
+        //{
+            
+        //}
         
 
         if (bMissileLaunch)
@@ -152,5 +166,33 @@ public class Boss : MonoBehaviour, ILogicEvent
         }
 
         yield break;
+    }
+
+    void MineSpread()
+    {
+        // 지뢰 생산
+        GameObject[] objs = new GameObject[5];
+        for (int i = 0; i < objs.Length; i++)
+        {
+            objs[i] = Instantiate(minePrefab, minePoint.position, Quaternion.identity);
+        }
+
+        
+
+        // 무작위 Force 부여로 확산
+        for(int i=0; i<objs.Length;i++)
+        {
+            float randX = Random.Range(-1.0f, 1.0f);
+            float randY = Random.Range(-1.0f, 1.0f);
+            float randZ = Random.Range(-1.0f, 1.0f);
+
+            Vector3 force = new Vector3(randX, randY, randZ);
+            force.Normalize();
+            
+            
+            objs[i].GetComponent<Rigidbody>().AddForce(force * 2000);
+        }
+
+        
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
+using UnityEngine.SceneManagement;
 
 public class LobbyRule : RulePrototype
 {
@@ -34,8 +35,10 @@ public class LobbyRule : RulePrototype
 
     public void OnMissionStartBtnClicked()
     {
-        ConnectRuleCache.InitializeConnection();
-        ChatRuleCache.InitializeChat();
+        //ConnectRuleCache.InitializeConnection();
+        //ChatRuleCache.InitializeChat();
+
+        SceneManager.LoadScene("Loading");
     }
 
     public void OnReturnToTitleBtnClicked()
@@ -48,7 +51,7 @@ public class LobbyRule : RulePrototype
         switch (msg)
         {
             case eEventMessage.ON_CONNECTED:
-                PhotonNetwork.LoadLevel("Stage1");
+                //PhotonNetwork.LoadLevel("Stage1");
                 break;
         }
     }

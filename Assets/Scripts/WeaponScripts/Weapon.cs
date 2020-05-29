@@ -205,8 +205,20 @@ public class Weapon : MonoBehaviour, ILogicEvent
                 return;
             }
 
+            // 체력 속성이 있다면 데미지 가한다
             var objHealth = ShootHit.collider.gameObject.GetComponent<Health>();
-            objHealth.TakeDamage(damagePerShot);
+            if (objHealth)
+            {
+                objHealth.TakeDamage(damagePerShot);
+            }
+
+            // 지뢰 속성이 있다면 밀치기 시킨다
+            Mine mine = ShootHit.collider.GetComponent<Mine>();
+            if (mine)
+            {
+                // 지뢰 밀치기
+                mine.HitReaction(ShootRay.direction);
+            }
         }
 
     }

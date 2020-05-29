@@ -17538,7 +17538,7 @@ MonoBehaviour:
   objDeadEffect: {fileID: 0}
   isDead: 0
   flashSpeed: 0.5
-  flashColor: {r: 1, g: 0, b: 0, a: 0.2}
+  flashColor: {r: 0.7058824, g: 0, b: 0, a: 0.11764706}
   objBarrier: {fileID: 5811176129940967014}
 --- !u!114 &5811176129893808192
 MonoBehaviour:
@@ -17559,8 +17559,8 @@ MonoBehaviour:
   Deceleration: 5
   XaxisSpeed: 30
   YaxisSpeed: 30
-  MinAngle: -45
-  MaxAngle: 45
+  MinAngle: -70
+  MaxAngle: 70
   JetMoveSpeed: 35
 --- !u!114 &5811176129893808193
 MonoBehaviour:
