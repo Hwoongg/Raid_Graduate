@@ -120,6 +120,7 @@ public class AssaultRifle : SwitchableWeapon
     {
         for (int i = 0; i < HideObjects.Length; i++)
             HideObjects[i].SetActive(true);
+        LogicEventListener.Invoke(eEventType.FOR_UI, eEventMessage.ON_AMMUNITION_COUNT_CHANGED, CurrentBullet, MaxBullet);
     }
 
     protected override void Fire(float _rp = 1.0f)

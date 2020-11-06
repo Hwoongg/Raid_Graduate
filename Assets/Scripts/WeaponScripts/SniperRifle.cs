@@ -111,6 +111,7 @@ public class SniperRifle : SwitchableWeapon
             {
                 playerCamera.mode = NewTPSCamera.Mode.SNIPING;
                 SnipingImg.color = new Color(SnipingImg.color.r, SnipingImg.color.g, SnipingImg.color.b, 1.0f);
+                LogicEventListener.Invoke(eEventType.FOR_UI, eEventMessage.ON_AMMUNITION_COUNT_CHANGED, CurrentBullet, MaxBullet);
             }
 
             // 뒤로 밀림 효과. 플레이어 컨트롤러와 같은 감쇄공식 적용.
