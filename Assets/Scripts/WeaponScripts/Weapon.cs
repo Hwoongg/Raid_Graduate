@@ -229,6 +229,11 @@ public class Weapon : MonoBehaviour, ILogicEvent
         StartCoroutine("ReloadingAnimationPlay");
     }
 
+    public void ReloadOneAmmo()
+    {
+        if(CurrentBullet < MaxBullet)
+            CurrentBullet++;
+    }
     IEnumerator ReloadingAnimationPlay()
     {
         animator.SetBool("isReloading", true);

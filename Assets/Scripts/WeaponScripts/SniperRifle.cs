@@ -34,7 +34,7 @@ public class SniperRifle : SwitchableWeapon
     float UiSwitchDelay; // 무기교체 딜레이의 절반으로 초기화 될 것
     float UiTimer;
 
-
+    AutoReloader reloader;
     protected override void OnEnable()
     {
         base.OnEnable();
@@ -55,6 +55,10 @@ public class SniperRifle : SwitchableWeapon
         playerTransform = GameObject.Find("LocalPlayer").transform;
         playerCamera = Camera.main.GetComponent<NewTPSCamera>();
         UiSwitchDelay = WeaponSwitchDelay * 0.5f;
+        
+        reloader = playerTransform.gameObject.AddComponent<AutoReloader>();
+        reloader.SetWeapon(this);
+        reloader.SetTimer(10.0f);
     }
 
     protected override void Start()

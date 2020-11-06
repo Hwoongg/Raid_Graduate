@@ -11,22 +11,46 @@ public class Mine : MonoBehaviour
 
     [SerializeField] GameObject efxExplotion;
 
-    // Start is called before the first frame update
+    Vector3 rotFactor;
+    Vector3 moveFactor;
+    bool isMovable;
+
+    Timer lifeTimer;
+    
     void Start()
     {
         sleepTimer = new Timer(1.5f);
         isAttackMode = false;
         rig = GetComponent<Rigidbody>();
+        rotFactor = new Vector3(0, 60, 0);
+        moveFactor = new Vector3(5, 0, 0);
+        isMovable = false;
+        float lifeTime = Random.Range(10.0f, 20.0f);
+        lifeTimer = new Timer(lifeTime);
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         sleepTimer.Update();
+        lifeTimer.Update();
+
         if(sleepTimer.IsTimeOver())
         {
             rig.Sleep();
+            isMovable = true;
         }
+
+        if(lifeTimer.IsTimeOver())
+        {
+            Explotion();
+        }
+
+        // 자전
+        transform.Rotate(rotFactor * Time.deltaTime);
+
+        // 이동
+        if (isMovable)
+            transform.Translate(moveFactor * Time.deltaTime);
     }
 
     // 밀치기 상태로 변경
