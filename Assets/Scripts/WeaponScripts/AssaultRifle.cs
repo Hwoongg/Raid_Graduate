@@ -52,8 +52,8 @@ public class AssaultRifle : SwitchableWeapon
     protected override void Update()
     {
         base.Update();
-
-        if (photonView.IsMine)
+        
+        if (photonView.IsMine || !AppManager.Instance().isOnline)
         {
             if (MoveableTimer > MoveableTime)
             {

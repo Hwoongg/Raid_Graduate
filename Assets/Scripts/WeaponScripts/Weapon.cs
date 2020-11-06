@@ -90,7 +90,7 @@ public class Weapon : MonoBehaviour, ILogicEvent
 
     protected virtual void Update()
     {
-        if (photonView.IsMine)
+        if (photonView.IsMine || !AppManager.Instance().isOnline)
         {
             timer += Time.deltaTime;
 

@@ -84,7 +84,7 @@ public class SniperRifle : SwitchableWeapon
 
     protected override void Update()
     {
-        if (photonView.IsMine)
+        if (photonView.IsMine || !AppManager.Instance().isOnline)
         {
             timer += Time.deltaTime;
 

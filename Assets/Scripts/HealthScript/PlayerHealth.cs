@@ -30,9 +30,12 @@ public class PlayerHealth : Health
 
     void Update()
     {
-        if (!photonView.IsMine && !PhotonNetwork.IsConnected)
+        if (AppManager.Instance().isOnline)
         {
-            return;
+            if (!photonView.IsMine && !PhotonNetwork.IsConnected)
+            {
+                return;
+            }
         }
 
         // 플레이어용 화면 피격 이펙트 연출

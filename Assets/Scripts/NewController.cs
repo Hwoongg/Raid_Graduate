@@ -86,11 +86,11 @@ public class NewController : MonoBehaviourPun, ILogicEvent
 
     void Update()
     {
-        if (!photonView.IsMine)
+        if (!photonView.IsMine && AppManager.Instance().isOnline)
         {
             return;
         }
-        
+
         InputControllerState();
         
         switch (mode)

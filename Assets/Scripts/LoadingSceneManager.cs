@@ -21,9 +21,16 @@ public class LoadingSceneManager : RulePrototype
         btnJoin.GetComponent<Button>().onClick.AddListener(Join);
         btnJoin.SetActive(false);
 
-        PhotonNetwork.LoadLevel(loadSceneName);
-
-        ao = PhotonNetwork.GetAO();
+        if (AppManager.Instance().isOnline)
+        {
+            PhotonNetwork.LoadLevel(loadSceneName);
+            ao = PhotonNetwork.GetAO();
+        }
+        else
+        {
+            ao = SceneManager.LoadSceneAsync(loadSceneName);
+        }
+        
         ao.allowSceneActivation = false; // 자동 실행 블락
     }
     
@@ -48,10 +55,15 @@ public class LoadingSceneManager : RulePrototype
 
     public void Join()
     {
-        FindObjectOfType<ConnectRule>().InitializeConnection();
-        FindObjectOfType<ChatRule>().InitializeChat();
-
-        //ao.allowSceneActivation = true;
+        if(AppManager.Instance().isOnline)
+        {
+            FindObjectOfType<ConnectRule>().InitializeConnection();
+            FindObjectOfType<ChatRule>().InitializeChat();
+        }
+        else
+        {
+            ao.allowSceneActivation = true;
+        }
     }
 
     public override void OnInvoked(eEventMessage msg, params object[] obj)
