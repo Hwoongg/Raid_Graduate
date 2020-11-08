@@ -47,7 +47,9 @@ public class MenuUIRule : RulePrototype
 
     public override void OnLeaveRoom()
     {
-        base.OnLeaveRoom();
+        if(AppManager.Instance().isOnline)
+            base.OnLeaveRoom();
+        SceneManager.LoadScene("Title");
     }
 
     void OnCloseMenuClicked()
