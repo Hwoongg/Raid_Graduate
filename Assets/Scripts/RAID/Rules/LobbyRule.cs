@@ -43,7 +43,9 @@ public class LobbyRule : RulePrototype
 
     public void OnReturnToTitleBtnClicked()
     {
-        base.OnLeaveRoom();
+        if(AppManager.Instance().isOnline)
+            base.OnLeaveRoom();
+        SceneManager.LoadScene("Title");
     }
 
     public override void OnInvoked(eEventMessage msg, params object[] obj)
