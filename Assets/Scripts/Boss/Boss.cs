@@ -26,7 +26,11 @@ public class Boss : MonoBehaviour, ILogicEvent
     Timer mineTimer;
     [SerializeField] GameObject minePrefab;
     [SerializeField] Transform minePoint;
+    [SerializeField] BossDeadEFX deadEFX;
 
+    bool deadEffect = false;
+
+    Timer deadTimer;
     void OnEnable()
     {
         EventSetCache = new EventSet(eEventType.FOR_ALL, this);
@@ -56,65 +60,91 @@ public class Boss : MonoBehaviour, ILogicEvent
         animator = GetComponent<Animator>();
         BossHealth = GetComponentInChildren<Health>();
         PlayerTfList.Add(GameObject.Find("LocalPlayer").transform);
-        missileTimer = new Timer(15.0f);
-        mineTimer = new Timer(60.0f);
+        missileTimer = new Timer(45.0f);
+        mineTimer = new Timer(30.0f);
+        deadTimer = new Timer(5.0f);
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Slash) && !bMissileLaunch)
+        // 사망 처리
+        if (BossHealth.isDead)
         {
-            bMissileLaunch = true;
-        }
-
-        missileTimer.Update();
-        if(missileTimer.IsTimeOver())
-        {
-            bMissileLaunch = true;
-        }
-
-        if(Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            MineSpread();
-        }
-
-        //mineTimer.Update();
-        //if(mineTimer.IsTimeOver())
-        //{
-            
-        //}
-        
-
-        if (bMissileLaunch)
-        {
-            timer += Time.deltaTime;
-
-            animator.SetBool("OpenSilo", true);
-
-            if (timer > 3.0f)
+            if (!deadEffect)
             {
-                if (!bLaunchComplete)
+                deadEFX.gameObject.SetActive(true);
+                deadEffect = true;
+            }
+            else
+            {
+                deadTimer.Update();
+                if (deadTimer.IsTimeOver())
                 {
-                    StartCoroutine("LaunchMissileThread");
-                    bLaunchComplete = true;
+                    deadEFX.LastExplotion();
+                    gameObject.SetActive(false);
+                    FindObjectOfType<Stage1Rule>().StageClear();
+                }
+            }
+        }
+        else
+        {
+            #region Cheat Commands
+            //if(Input.GetKeyDown(KeyCode.K))
+            //{
+            //    BossHealth.isDead = true;
+            //}
+            //if (Input.GetKeyDown(KeyCode.Slash) && !bMissileLaunch)
+            //{
+            //    bMissileLaunch = true;
+            //}
+            //if(Input.GetKeyDown(KeyCode.Period))
+            //{
+            //    MineSpread();
+            //}
+            #endregion
+
+            missileTimer.Update();
+            if (missileTimer.IsTimeOver())
+            {
+                bMissileLaunch = true;
+            }
+
+            mineTimer.Update();
+            if (mineTimer.IsTimeOver())
+            {
+                MineSpread();
+            }
+            
+            if (bMissileLaunch)
+            {
+                timer += Time.deltaTime;
+
+                animator.SetBool("OpenSilo", true);
+
+                if (timer > 3.0f)
+                {
+                    if (!bLaunchComplete)
+                    {
+                        StartCoroutine("LaunchMissileThread");
+                        bLaunchComplete = true;
+                    }
+
+                }
+                if (timer > 7.0f)
+                {
+                    animator.SetBool("OpenSilo", false);
                 }
 
-            }
-            if (timer > 7.0f)
-            {
-                animator.SetBool("OpenSilo", false);
-            }
-
-            if (timer > 10.0f)
-            {
-                bMissileLaunch = false;
-                bLaunchComplete = false;
-                timer = 0;
+                if (timer > 10.0f)
+                {
+                    bMissileLaunch = false;
+                    bLaunchComplete = false;
+                    timer = 0;
+                }
             }
         }
 
-        if (BossHealth.isDead)
-            gameObject.SetActive(false);
+        
     }
 
     IEnumerator LaunchMissileThread()
@@ -171,7 +201,7 @@ public class Boss : MonoBehaviour, ILogicEvent
     void MineSpread()
     {
         // 지뢰 생산
-        GameObject[] objs = new GameObject[5];
+        GameObject[] objs = new GameObject[8];
         for (int i = 0; i < objs.Length; i++)
         {
             objs[i] = Instantiate(minePrefab, minePoint.position, Quaternion.identity);
@@ -188,6 +218,15 @@ public class Boss : MonoBehaviour, ILogicEvent
 
             Vector3 force = new Vector3(randX, randY, randZ);
             force.Normalize();
+
+            // 지뢰의 날아가는 방향이 X축이 되도록 회전
+            //Vector3 rotAxis = Vector3.Cross(objs[i].transform.right, force);
+            //float angle = Vector3.Angle(objs[i].transform.right, force);
+
+            //var Rot = Quaternion.AngleAxis(angle, rotAxis) * objs[i].transform.rotation;
+            
+            objs[i].transform.rotation = Random.rotation;
+
             
             
             objs[i].GetComponent<Rigidbody>().AddForce(force * 2000);
