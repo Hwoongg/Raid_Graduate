@@ -504,7 +504,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!1 &1151576565
 GameObject:
@@ -603,7 +603,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!1 &1157992990
 GameObject:
@@ -829,7 +829,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000021517859, y: 0.000041968928}
+  m_AnchoredPosition: {x: -0.0000033421031, y: 0.000095848416}
   m_SizeDelta: {x: 0, y: 659.9}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1400240268
@@ -1141,8 +1141,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 150535662}
   m_HandleRect: {fileID: 150535661}
   m_Direction: 2
-  m_Value: 0.9999995
-  m_Size: 0.8025003
+  m_Value: 1
+  m_Size: 0.80250025
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1264,8 +1264,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 361168058}
   m_HandleRect: {fileID: 361168057}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 0.9999998
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
