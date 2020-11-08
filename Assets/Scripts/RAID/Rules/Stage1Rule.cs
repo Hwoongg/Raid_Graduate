@@ -33,6 +33,7 @@ public class Stage1Rule : RulePrototype
     public Scene[] Scenes { get; set; } = new Scene[2];
     public List<GameObject> ChatSceneGOs { get; set; } = new List<GameObject>();
     public List<GameObject> MenuSceneGOs { get; set; } = new List<GameObject>();
+    [SerializeField] GameObject stageClearCanvas;
 
     public override void OnLeftRoom()
     {
@@ -225,5 +226,10 @@ public class Stage1Rule : RulePrototype
                 MenuSceneGOs.Clear();
                 break;
         }
+    }
+
+    public void StageClear()
+    {
+        stageClearCanvas.SetActive(true);
     }
 };
