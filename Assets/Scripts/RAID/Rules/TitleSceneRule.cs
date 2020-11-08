@@ -10,6 +10,7 @@ public class TitleSceneRule : RulePrototype
     [SerializeField] UIUsername UserName;
     [SerializeField] UIPassword Password;
     [SerializeField] Button LoginBtn;
+    [SerializeField] GameObject offlineCanvas;
     /// <summary>
     /// 
     /// </summary>
@@ -32,6 +33,16 @@ public class TitleSceneRule : RulePrototype
 
         Dbg.LogCheckAssigned(FlyAwayAnims[0], this);
         Dbg.LogCheckAssigned(FlyAwayAnims[1], this);
+
+        if (!AppManager.Instance().isOnline)
+        {
+            InputField name = UserName.GetComponent<InputField>();
+            name.interactable = false;
+
+            Password.GetComponent<InputField>().interactable = false;
+
+            offlineCanvas.gameObject.SetActive(true);
+        }
     }
 
     public override void OnInvoked(eEventMessage msg, params object[] obj)
